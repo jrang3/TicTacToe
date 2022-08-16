@@ -1,0 +1,13 @@
+CXX=clang++-10
+CXX_FLAGS=-std=c++20 -g -O0 -Wall -Wextra -Werror -Iincludes/
+
+exec: bin/exec
+
+bin/exec: src/main.cc includes/tictactoe.hpp src/tictactoe.cc src/main.cc
+	${CXX} ${CXX_FLAGS} src/main.cc src/tictactoe.cc src/main.cc -o bin/exec
+
+.DEFAULT_GOAL := exec
+.PHONY: clean exec
+
+clean:
+	rm -rf bin/*
