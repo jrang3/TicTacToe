@@ -8,7 +8,9 @@ Motivation For Project
 Difficulties Ran Into
 - I didn’t really have many difficulties with this project. I thought it was pretty straightforward of a project to work on.
 
-How to Run Program
+How to Run Program in VS Code
+
+
 Type in clang++ -std=c++20 -Iincludes ./src/main.cc ./src/tictactoe.cc and then ./a.out
 
 Screenshots of Program
